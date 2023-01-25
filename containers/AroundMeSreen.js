@@ -39,7 +39,7 @@ export default function AroundMeScreen() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://express-airbnb-api.herokuapp.com/rooms/around"
+          "https://lereacteur-bootcamp-api.herokuapp.com/api/airbnb/rooms/around"
         );
         setDataLocation(response.data);
         setIsLoading(false);
